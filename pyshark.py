@@ -1,5 +1,5 @@
-# import os
-# import scapy
+#!/bin/python2.7
+# import os# import scapy
 # import pcapng
 # from scapy.utils import rdpcap
 #
@@ -17,5 +17,5 @@ import pyshark
 
 udp_payload=[]
 capture = pyshark.FileCapture('capture.log',display_filter='udp port 22222')
-udp_payload.append(bytearray.fromhex(capture.data.data).decode())
-
+test = bytearray.fromhex(capture.data.data).decode())
+print test
